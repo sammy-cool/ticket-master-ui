@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { startUpdateDept } from '../../../actions/departmentAction'
+import { startUpdateDept } from '../../actions/departmentAction'
 
 class DepartmentShow extends React.Component {
     showDepartmentName = (id) => {

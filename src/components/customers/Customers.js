@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { startCreateCustomer, startGetAllCustomers, startUpdateCustomerEmail, startDeleteCustomer  } from '../../../actions/customerAction'
+import { startCreateCustomer, startGetAllCustomers, startUpdateCustomerEmail, startDeleteCustomer  } from '../../actions/customerAction'
 import CustomerAdd from './CustomerAdd'
 
 class Customers extends React.Component {

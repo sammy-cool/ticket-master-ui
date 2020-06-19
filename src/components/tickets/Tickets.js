@@ -1,6 +1,5 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { startGetAllTickets, startUpdateTicket, startCreateTicket, startDeleteTicket } from '../../../actions/ticketAction'
 
 class Tickets extends React.Component {
     constructor(props){

@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { startCreateDept, startGetAllDepartments, startUpdateDept, startDeleteDept  } from '../../../actions/departmentAction'
+import { startCreateDept, startGetAllDepartments, startUpdateDept, startDeleteDept  } from '../../actions/departmentAction'
 
 class Departments extends React.Component {
     constructor() {

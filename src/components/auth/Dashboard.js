@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { startGetUser } from '../../../actions/userAction'
+import { startGetUser } from '../../actions/userAction'
 
 class Dashboard extends React.Component {
    componentDidMount() {

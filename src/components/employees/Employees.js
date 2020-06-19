@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { startGetAllEmployees, startCreateEmployee, startUpdateEmployeeName, startDeleteEmployee } from '../../../actions/employeeAction'
+import { startGetAllEmployees, startCreateEmployee, startUpdateEmployeeName, startDeleteEmployee } from '../../actions/employeeAction'
 
 class Employees extends React.Component {
 

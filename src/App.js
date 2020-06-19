@@ -4,14 +4,14 @@ import {BrowserRouter, Route, Link} from 'react-router-dom'
 
 import Home from './components/static/Home'
 import Login from './components/auth/Login'
-import Register from './components/auth/Register'
+import Register from './components/auth/Rejister'
 import Dashboard from './components/auth/Dashboard'
 import Customers from './components/customers/Customers'
 import CustomerShow from './components/customers/CustomerShow'
 import Departments from './components/departments/Departments'
 import DepartmentShow from './components/departments/DepartmentShow'
 import Employees from './components/employees/Employees'
-import Tickets from './components/tickets/Tickets'
+//import Tickets from './components/tickets/Tickets'
 import { startUserLogout } from './actions/userAction'
 
 
@@ -36,8 +36,7 @@ function App(props) {
                             <Link to='/employees'>Employees</Link>|
                             <Route path='/employees' component={Employees}/>
 
-                            <Link to='/tickets'>Tickets</Link>|
-                            <Route path='/tickets' component={Tickets}/>
+                           
 
                             <Link to='#' onClick={handleLogout}>Logout</Link>
                         </div>

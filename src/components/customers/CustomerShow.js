@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { startUpdateCustomerEmail } from '../../../actions/customerAction'
+import { startUpdateCustomerEmail } from '../../actions/customerAction'
 
 class CustomerShow extends React.Component {
     constructor(){
