@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import { startCreateCustomer, startGetAllCustomers, startUpdateCustomerEmail, startDeleteCustomer  } from '../../../actions/customerAction'
-import AddCustomer from './AddCustomer'
+import CustomerAdd from './CustomerAdd'
 
 class Customers extends React.Component {
     constructor(props){
@@ -108,7 +108,7 @@ class Customers extends React.Component {
                     </tbody>
                 </table> <br/>
                 
-                {(this.state.isAdd)? <AddCustomer isAdd={this.state.isAdd} /> : <button onClick={this.handleAddCustomer}>Add Customer</button>  }
+                {(this.state.isAdd)? <CustomerAdd isAdd={this.state.isAdd} /> : <button onClick={this.handleAddCustomer}>Add Customer</button>  }
               
             </div>
         )

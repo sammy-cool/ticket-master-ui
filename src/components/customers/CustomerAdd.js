@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import {startCreateCustomer} from '../../../actions/customerAction'
+import {startCreateCustomer} from '../../actions/customerAction'
 
 class CustomerAdd extends React.Component {
     constructor(props){
