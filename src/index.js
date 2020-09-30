@@ -1,25 +1,29 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
+
 import App from './App'
+import { Provider } from 'react-redux'  //Provider component will make the redux store available to the rest of our appln
 
-import configureStore  from './store/configureStore'
-import { startGetAllCustomers } from './actions/customerAction'
-import { startLoginUser } from './actions/userAction'
 
-const store = configureStore()
-console.log(store.getState())
-store.subscribe(()=>{
-    console.log(store.getState())
-})
+import configureStore from './store/configureStore'
+import { startGetUser } from './actions/userAction'
 
-// // Page Reloads
-if(localStorage.getItem('authToken')) {
-        store.dispatch(startGetAllCustomers())
+ const store = configureStore()
+ console.log(store.getState())
+
+ store.subscribe(() => {
+     console.log(store.getState())
+ })
+
+ // handle page reload
+ if(localStorage.getItem('authToken')) {
+     store.dispatch(startGetUser())
  }
 
-ReactDOM.render(
-<Provider store={store}>
-    <App />
-</Provider>, 
-document.getElementById('root'))
+ const jsx = (
+     <Provider store={store}>
+         <App />
+     </Provider>
+ )
+
+ReactDOM.render(jsx, document.getElementById('root'))
